@@ -13,7 +13,8 @@ Your search won't start until you're ready, giving you time to think about what 
 
 Simply type `y` next to `**Ready to Search**: ` and you're off to the races.
 
-https://github.com/user-attachments/assets/6ff35a6f-cd3b-4b4c-aabb-0cff5985cf00
+
+https://github.com/user-attachments/assets/0c09ee8c-8eab-4788-bd5a-57691d3f1883
 
 
 ## future ideas

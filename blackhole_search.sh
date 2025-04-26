@@ -55,7 +55,7 @@ create_note_template() {
 **Objective**: 
 **Stop Searching When**: 
 **Time Limit**: 10 minutes
-**What I could do instead**: 
+**Next Steps**: 
   1. 
   2. 
   3. 

@@ -64,7 +64,6 @@ create_note_template() {
 EOF
 }
 
-# Function to create and open the Obsidian note
 create_obsidian_note() {
     local note_content=$(create_note_template)
     local uri="obsidian://new?vault=$OBSIDIAN_VAULT_NAME&name=$SANITIZED_OBSIDIAN_NOTE_NAME&content=$note_content"
@@ -73,7 +72,6 @@ create_obsidian_note() {
     open "$uri"
 }
 
-# Function to monitor file for ready signal
 wait_for_ready_signal() {
     echo "Waiting for '**Ready to Search**: y' to appear in the file..."
     echo "File path: $FILE_PATH_EXPANDED"
@@ -95,13 +93,11 @@ wait_for_ready_signal() {
     done
 }
 
-# Function to open the search URL
 open_search() {
     echo "Opening search URL: $SEARCH_URL"
     open "$SEARCH_URL"
 }
 
-# Main function
 main() {
     validate_requirements
     create_obsidian_note
@@ -109,5 +105,4 @@ main() {
     open_search
 }
 
-# Execute the main function
 main

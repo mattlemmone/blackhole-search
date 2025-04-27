@@ -13,12 +13,11 @@
 
 # Global variables
 SEARCH_QUERY=$1
-SEARCH_URL="https://www.perplexity.ai/search?q=$SEARCH_QUERY"
+SEARCH_URL="$BLACKHOLE_SEARCH_URL$SEARCH_QUERY"
 
-OBSIDIAN_VAULT_NAME="iOS Vault"
-OBSIDIAN_NOTE_PATH="~/Library/Mobile Documents/iCloud~md~obsidian/Documents/$OBSIDIAN_VAULT_NAME"
 DATE=$(date +%Y-%m-%d)
 OBSIDIAN_NOTE_NAME="Black Hole Search - $SEARCH_QUERY - $DATE"
+
 FORBIDDEN_FILENAME_CHARACTERS=":/\\"
 SANITIZED_OBSIDIAN_NOTE_NAME=$(echo "$OBSIDIAN_NOTE_NAME" | sed "s/[$FORBIDDEN_FILENAME_CHARACTERS]//g")
 FILE_PATH="$OBSIDIAN_NOTE_PATH/$SANITIZED_OBSIDIAN_NOTE_NAME.md"
@@ -83,7 +82,7 @@ wait_for_ready_signal() {
             echo "Current last line: $LAST_LINE"
             
             if [ "$LAST_LINE" = "**Ready to Search**: y" ]; then
-                echo "Ready to search detected! Opening search URL..."
+                echo "Opening search URL..."
                 return 0
             fi
         else

@@ -20,8 +20,8 @@ https://github.com/user-attachments/assets/0c09ee8c-8eab-4788-bd5a-57691d3f1883
 Be sure to set the following environment variables.
 
 ```bash
-export OBSIDIAN_VAULT_NAME="your_vault_name"
-export OBSIDIAN_VAULT_PATH="your_vault_path"
+export OBSIDIAN_VAULT_NAME="iOS Vault"
+export OBSIDIAN_VAULT_PATH="~/something/something/something/$OBSIDIAN_VAULT_NAME"
 export BLACKHOLE_SEARCH_URL="https://www.perplexity.ai/search?q=
 ```
 

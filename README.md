@@ -1,6 +1,6 @@
 # Blackhole Search
 
-A bash script to help me be more deliberate with my search queries. This is intended to be used with RayCast, but can be used in your terminal.
+A bash script to help me [think before I search](https://mattlemmone.com/notes/before-you-search/). This is intended to be used with RayCast, but can be used in your terminal.
 
 ## what
 
